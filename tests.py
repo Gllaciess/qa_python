@@ -86,6 +86,14 @@ class TestBooksCollector:
 		assert collector.get_books_for_children() == []
 
 
+	def test_add_book_in_favorites_positive(self):
+		collector = BooksCollector()
+
+
+		collector.add_new_book('Гарри Поттер')
+		collector.add_book_in_favorites('Гарри Поттер')
+		assert 'Гарри Поттер' in collector.get_list_of_favorites_books()
+
 
 
 	def test_add_book_in_favorites_book_not_in_books_genre_not_added(self):
