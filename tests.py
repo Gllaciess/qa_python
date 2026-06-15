@@ -132,3 +132,5 @@ class TestBooksCollector:
 		assert 'Властелин колец' in favorites
 
 
+
+
